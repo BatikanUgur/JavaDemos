@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<String> sehirler = new ArrayList<String>();//Typedef
+        sehirler.add("İstanbul");
+        sehirler.add("Elazığ");
+        sehirler.add("İzmir");
+        sehirler.add("Aydın");
+
+        sehirler.remove("İstanbul");
+        Collections.sort(sehirler);
+        for (String sehir:sehirler){
+            System.out.println(sehir);
+        }
+        System.out.println(sehirler.get(0));//sıralandıktan sonra artık indexler değişti
+    }
+
+}
